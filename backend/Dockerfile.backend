@@ -8,6 +8,8 @@ RUN npm install
 
 COPY backend ./backend
 
+ENV NODE_ENV=production
+
 EXPOSE 5000
 
 CMD ["node", "backend/server.js"]
